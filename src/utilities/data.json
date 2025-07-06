@@ -1,0 +1,62 @@
+{
+  "ielts_writing": {
+    "task_1": [
+      {
+        "id": 1,
+        "question": "The chart below shows the proportion of male and female students studying six art-related subjects at a UK university in 2011. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+        "image_name": "task1q1"
+      },
+      {
+        "id": 2,
+        "question": "The pie chart below shows the percentage of ad spending by different kinds of media in India from 2012 to 2017. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.",
+        "image_name": "task1q2"
+      },
+      {
+        "id": 3,
+        "question": "The graph below gives information from a 2008 report about consumption of energy in the USA since 1980 with projections until 2030. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.",
+        "image_name": "task1q3"
+      },
+      {
+        "id": 4,
+        "question": "The table shows existing and projected changes in the proportion of people over 65 in the populations of three countries from 2015 to 2030. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.",
+        "image_name": "task1q4"
+      },
+      {
+        "id": 5,
+        "question": "The diagram shows the process by which electricity is generated in two types of hydroelectric power station. Summarise the information by selecting and reporting the main features. Write at least 150 words.",
+        "image_name": "task1q5"
+      },
+      {
+        "id": 6,
+        "question": "The table shows the number of people (millions) that remain undernourished around the world from 2000 to 2009.  The chart displays the global price of two food grains over the same period. Summarise the data by selecting and reporting the main features and make comparisons where relevant. Write at least 150 words.",
+        "image_name": "task1q6"
+      }
+    ],
+    "task_2": [
+      {
+        "id": 1,
+        "question": "Write about the following topic: The percentage of overweight children in western society has increased by almost 20% in the last ten years. Discuss the causes and effects of this disturbing trend. Give reasons for your answer and include any relevant examples from your own knowledge or experience."
+      },
+      {
+        "id": 2,
+        "question": "Write about the following topic: More and more people are migrating to cities in search of a better life, but city life can be extremely difficult. Explain some of the difficulties of living in a city. How can governments make urban life better for everyone? Give reasons for your answer and include any relevant examples from your own knowledge or experience."
+      },
+      {
+        "id": 3,
+        "question": "Write about the following topic: Some people advocate the death penalty for those who committed violent crimes. Others say that capital punishment is unacceptable in contemporary society.Describe the advantages and disadvantages of the death penalty and give your opinion. Give reasons for your answer and include any relevant examples from your own knowledge or experience."
+      },
+      {
+        "id": 4,
+        "question": "Write about the following topic: Some people think that a sense of competition in children should be encouraged.  Others believe that children who are taught to co-operate rather than compete become more useful adults.Discuss both these views and give your own opinion. Give reasons for your answer and include any relevant examples from your own knowledge or experience."
+      },
+      {
+        "id": 5,
+        "question": "Write about the following topic: Many people prefer to watch foreign films rather than locally produced films. Why could this be Should governments give more financial support to local film industries? Give reasons for your answer and include any relevant examples from your own knowledge orexperience."
+      },
+      {
+        "id": 6,
+        "question": "Write about the following topic: New technologies and ways of buying and selling are transforming the lives of consumers. To what extent do you agree with this opinion? Give reasons for your answer and include any relevant examples from your own knowledge or experience."
+      }
+    ]
+  }
+}
