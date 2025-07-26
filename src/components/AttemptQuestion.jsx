@@ -47,8 +47,8 @@ export default function AttemptQuestion() {
     setAnswerProcessing(true);
     // console.log("answer: ", answer);
 
-    // const apiUrl = "https://writing-task-evaluation-v2.onrender.com/evaluate";
-    const apiUrl = "http://127.0.0.1:5000/evaluate";
+    const apiUrl = "https://writing-task-evaluation-v2.onrender.com/evaluate";
+    // const apiUrl = "http://127.0.0.1:5000/evaluate";
 
     const requestBody = {
       writing_sample: answer,
