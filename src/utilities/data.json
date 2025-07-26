@@ -4,32 +4,38 @@
       {
         "id": 1,
         "question": "The chart below shows the proportion of male and female students studying six art-related subjects at a UK university in 2011. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
-        "image_name": "task1q1"
+        "image_name": "task1q1",
+        "image_description": "A bar chart comparing the number of male and female students enrolled in six different art-related subjects at a UK university in 2011. Each subject displays two bars: one for males and one for females. Linguistics: Around 180 male students and 240 female students. Philosophy: About 100 males and 150 females. English Language and Literature: Approximately 110 males and 230 females. History and Archaeology: Roughly 220 males and 250 females. Art and Design: About 180 males and 160 females — the only subject with more males than females. Communication and Media Studies: Around 210 males and 230 females. Overall, female enrollment is higher in five out of the six subjects, with Art and Design being the exception."
       },
       {
         "id": 2,
         "question": "The pie chart below shows the percentage of ad spending by different kinds of media in India from 2012 to 2017. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.",
-        "image_name": "task1q2"
+        "image_name": "task1q2",
+        "image_description": "Two pie charts comparing the distribution of advertising spending by media type in India for the years 2012 and 2017. Each chart shows the percentage share of six types of media: TV, Print, Digital, Outdoor, Radio, and Cinema. In 2012: TV had the largest share at 43%, Print followed closely with 38%, Digital accounted for 6%, Outdoor 5%, Radio 7%, and Cinema 1%. In 2017: TV slightly increased to 45%, Print decreased to 30%, Digital rose to 15%, Outdoor remained at 5%, Radio dropped to 4%, and Cinema stayed at 1%. Overall, the data shows a rise in digital advertising and a decline in print, while TV continued to dominate."
       },
       {
         "id": 3,
         "question": "The graph below gives information from a 2008 report about consumption of energy in the USA since 1980 with projections until 2030. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.",
-        "image_name": "task1q3"
+        "image_name": "task1q3",
+        "image_description": "A line graph showing historical and projected energy consumption in the United States by fuel type from 1980 to 2030. Consumption is measured in quadrillion units and includes Petrol and Oil, Coal, Natural Gas, Nuclear, Solar/Wind, and Hydropower. Petrol and Oil have the highest usage throughout, rising from about 35 units in 1980 to nearly 50 by 2030. Coal increases from 15 to about 30 units. Natural Gas remains relatively stable just above 25. Nuclear grows gradually to about 10 units and then plateaus. Solar/Wind show slight growth, reaching above 5 units. Hydropower stays nearly flat at around 4 units for the whole period."
       },
       {
         "id": 4,
         "question": "The table shows existing and projected changes in the proportion of people over 65 in the populations of three countries from 2015 to 2030. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.",
-        "image_name": "task1q4"
+        "image_name": "task1q4",
+        "image_description": "A table showing projected changes in the percentage of people aged over 65 in three countries — the United Kingdom, Canada, and Hungary — from 2015 to 2030, in five-year intervals. The UK rises from 18.1% to 21.6%. Canada increases more significantly, from 16.0% to 22.7%, the highest by 2030. Hungary grows from 17.6% to 21.3%. All countries converge around 20.4–20.5% by 2025, but Canada leads by the end of the period."
       },
       {
         "id": 5,
         "question": "The diagram shows the process by which electricity is generated in two types of hydroelectric power station. Summarise the information by selecting and reporting the main features. Write at least 150 words.",
-        "image_name": "task1q5"
+        "image_name": "task1q5",
+        "image_description": "A process diagram showing how a hydroelectric power station generates electricity. First, water is diverted from the river into a new downhill channel. It flows through a pipe and spins turbine blades. The turbine powers a generator to produce electricity. The electricity is then transmitted through power lines. Finally, the water is returned to the river. An inset also shows a traditional hydroelectric plant with a similar intake-turbine-power sequence. The process illustrates how the energy of flowing water is converted into electrical energy."
       },
       {
         "id": 6,
         "question": "The table shows the number of people (millions) that remain undernourished around the world from 2000 to 2009.  The chart displays the global price of two food grains over the same period. Summarise the data by selecting and reporting the main features and make comparisons where relevant. Write at least 150 words.",
-        "image_name": "task1q6"
+        "image_name": "task1q6",
+        "image_description": "The visual includes a table and a line graph. The table shows a steady increase in the number of undernourished people worldwide from 857 million in 2000 to 1,024 million in 2009. The line graph illustrates the price trends of rice and wheat during the same period. Both grains had stable prices until 2006, after which there was a sharp increase. Wheat rose from under $400 to about $1,200 per ton, while rice increased to around $950. The data suggests a possible link between rising food prices and global undernourishment."
       }
     ],
     "task_2": [

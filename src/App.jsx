@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import LandingPage from "./components/LandingPage";
 import QuestionsList from "./components/QuestionsList";
 import AttemptQuestion from "./components/AttemptQuestion";
@@ -14,6 +19,8 @@ function App() {
           <Route path="/questions" element={<QuestionsList />} />
           <Route path="/attempt" element={<AttemptQuestion />} />
           <Route path="/evaluation" element={<Evaluation />} />
+          {/* Fallback route for any unmatched paths — redirects to home */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Router>
     </TaskProvider>
