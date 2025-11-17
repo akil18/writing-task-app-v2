@@ -1,5 +1,6 @@
 import { useTask } from "../context/useTask";
 import { useEffect } from "react";
+import { PhotoProvider, PhotoView } from "react-photo-view";
 import { useNavigate } from "react-router-dom";
 
 export default function Evaluation() {
@@ -8,10 +9,13 @@ export default function Evaluation() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (!selectedQuestion || !evaluation) {
+    if (!selectedQuestion || !evaluation || evaluation === null) {
+      // console.log("!evaluation: ", evaluation);
       navigate("/");
     }
-    console.log("evaluation: ", evaluation);
+    if (evaluation?.warning) {
+      alert(`Warning: ${evaluation.warning}`);
+    }
   }, [selectedQuestion, evaluation, navigate]);
 
   const imageSrc = selectedQuestion?.image_name
@@ -19,7 +23,7 @@ export default function Evaluation() {
         .href
     : null;
 
-  if (!selectedQuestion || !evaluation) return null;
+  if (!selectedQuestion || !evaluation || evaluation === null) return null;
 
   return (
     <div className="bg-[#0f1525] text-white p-6 min-h-screen space-y-6">
@@ -29,11 +33,18 @@ export default function Evaluation() {
         <p className="font-semibold mb-2">Question:</p>
         <p>{selectedQuestion.question}</p>
         {imageSrc && (
-          <img
-            src={imageSrc}
-            alt="Task chart"
-            className="mt-4 rounded max-w-64"
-          />
+          <PhotoProvider>
+            <div className="cursor-pointer mt-4 rounded max-w-64 hover:scale-101 transition-transform">
+              <PhotoView src={imageSrc}>
+                <img src={imageSrc} alt="" />
+              </PhotoView>
+            </div>
+          </PhotoProvider>
+          // <img
+          //   src={imageSrc}
+          //   alt="Task chart"
+          //   className="mt-4 rounded max-w-64"
+          // />
         )}
       </div>
 
@@ -45,25 +56,25 @@ export default function Evaluation() {
       <div className="bg-gray-800 p-4 rounded space-y-3">
         <p className="font-semibold text-lg">Evaluation</p>
         <p>
-          <strong>Score:</strong> {evaluation.score}
+          <strong>Score:</strong> {evaluation?.score}
         </p>
         <p>
-          <strong>Test Variant:</strong> {evaluation.test_variant}
+          <strong>Test Variant:</strong> {evaluation?.test_variant}
         </p>
         <p>
-          <strong>Word Count:</strong> {evaluation.word_count}
+          <strong>Word Count:</strong> {evaluation?.word_count}
         </p>
         <div>
           <p className="font-semibold">Misspelled Words:</p>
           <ul className="list-disc list-inside ml-4">
-            {evaluation.misspelled_words.map((word, index) => (
+            {evaluation?.misspelled_words?.map((word, index) => (
               <li key={index}>{word}</li>
             ))}
           </ul>
         </div>
         <div>
           <p className="font-semibold">Reasoning:</p>
-          <p>{evaluation.reasoning}</p>
+          <p>{evaluation?.reasoning}</p>
         </div>
       </div>
     </div>

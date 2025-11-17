@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTask } from "../context/useTask";
 import PageLoader from "./PageLoader";
+import { PhotoProvider, PhotoView } from "react-photo-view";
 
 export default function AttemptQuestion() {
   const { selectedQuestion, selectedTask, answer, setAnswer, setEvaluation } =
@@ -48,7 +49,7 @@ export default function AttemptQuestion() {
     // console.log("answer: ", answer);
 
     const apiUrl = "https://writing-task-evaluation-v2.onrender.com/evaluate";
-    // const apiUrl = "http://127.0.0.1:5000/evaluate";
+    // const apiUrl = "http://127.0.0.1:8000/evaluate";
 
     const requestBody = {
       writing_sample: answer,
@@ -74,7 +75,11 @@ export default function AttemptQuestion() {
       })
       .then((data) => {
         // console.log("Response from API:", data);
-        setEvaluation(data?.evaluation);
+        if (data.evaluation?.warning) {
+          alert(`Warning: ${data.evaluation.warning}`);
+        } else {
+          setEvaluation(data?.evaluation);
+        }
         navigate("/evaluation");
       })
       .catch((error) => {
@@ -105,7 +110,14 @@ export default function AttemptQuestion() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-gray-800 h-max p-4 rounded">
             <p className="mb-4">{selectedQuestion.question}</p>
-            {imageSrc && <img src={imageSrc} alt="image" />}
+            <PhotoProvider>
+              <div className="cursor-pointer">
+                <PhotoView src={imageSrc}>
+                  <img src={imageSrc} alt="" />
+                </PhotoView>
+              </div>
+            </PhotoProvider>
+            {/* {imageSrc && <img src={imageSrc} alt="image" />} */}
           </div>
 
           <div>
